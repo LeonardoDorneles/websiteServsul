@@ -1,6 +1,9 @@
 import "./globals.css";
-import {Header} from '../components/header/'
+import {Header} from '../components/header'
 import {Hero} from '../components/hero'
+import Services from '../components/services'
+import { Location } from '@/components/location';
+import Contacts from '@/components/contacts'
  
 
 export default function RootLayout({ children }) {
@@ -9,6 +12,10 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <Hero />
+        <Services />
+        <Location />
+        <Contacts />
+
 
         {children}
       </body>

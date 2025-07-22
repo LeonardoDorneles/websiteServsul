@@ -1,8 +1,15 @@
 import { Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Header() {
+  const whatsappNumber = "5555984144818"; 
+  const whatsappMessage = encodeURIComponent("Ola, gostaria de solicitar um orçamento para a minha empresa."); 
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+
   return (
     <header className="w-full bg-background border-b border-border shadow-card">
       <div className="container mx-auto px-4">
@@ -10,7 +17,7 @@ export function Header() {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>(55) 99631-0112</span>
+              <span>(55) 3411-7935</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
@@ -35,22 +42,24 @@ export function Header() {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#sobrenos" className="font-medium">
               Sobre nós
             </a>
-            <a href="#servicos" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#servicos" className="font-medium">
               Serviços
             </a>
-            <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#sobre" className="font-medium">
               Localização
             </a>
-            <a href="#contato" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#contato" className="font-medium">
               Contato
             </a>
           </div>
 
-          <Button variant="default" size="lg">
-            Solicitar Orçamento
+          <Button asChild variant="default" size="lg">
+            <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">    
+              Solicitar Orçamento
+            </Link>
           </Button>
         </nav>
       </div>

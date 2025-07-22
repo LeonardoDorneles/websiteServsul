@@ -1,21 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Users, Clock, Award } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
+  const whatsappNumber = "5555984144818"; 
+  const whatsappMessage = encodeURIComponent("Ola, gostaria de solicitar um orçamento para a minha empresa."); 
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+
   return (
-    <section className="relative min-h-screen flex items-center bg-indigo-700 overflow-hidden"> {/* bg-gradient-hero -> bg-indigo-700 (um roxo/azul forte) */}
+    <section id="sobrenos" className="relative min-h-screen flex items-center bg-indigo-700 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={"/img/logoresized.png"}
+          src={"/img/logobg.png"}
           alt="Servsul"
           width={1920}
           height={1080}
           className="w-full h-full object-cover opacity-20"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        {/* bg-gradient-hero -> bg-indigo-800 com opacidade ajustada */}
         <div className="absolute inset-0 bg-gray-950 opacity-80"></div> 
       </div>
 
@@ -24,7 +30,7 @@ export function Hero() {
           <div className="text-white animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Proteção Total para
-              <span className="text-yellow-300"> Sua Empresa</span> {/* text-primary-glow -> text-yellow-300 (um tom de amarelo brilhante) */}
+              <span className="text-yellow-300"> Sua Empresa</span> 
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Soluções completas em segurança com tecnologia de ponta,
@@ -33,11 +39,15 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button variant="default" size="lg" className="text-lg px-8 py-6">
-                Solicitar Orçamento Gratuito
+              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 w-68 text-white border-white hover:bg-white hover:text-blue-600">
+                <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                  Solicitar Orçamento Gratuito
+                </Link>
               </Button>
-              <Button variant="default" size="lg" className="text-lg px-8 py-6 text-white border-white hover:bg-white hover:text-blue-600"> {/* hover:text-primary -> hover:text-blue-600 (azul padrão do Tailwind) */}
-                Nossos Serviços
+              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 w-68 text-white border-white hover:bg-white hover:text-blue-600">
+                <Link href="#servicos"> 
+                  Nossos Serviços
+                </Link>
               </Button>
             </div>
 
