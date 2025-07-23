@@ -24,7 +24,7 @@ export function Header() {
             </div>
           </div>
           <div>
-            Atendimento 24h • Monitoramento 24/7
+            Suporte 24h • Monitoramento 24/7
           </div>
         </div>
 

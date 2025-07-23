@@ -1,4 +1,4 @@
-import { Camera, Shield, Users, Smartphone, Lock, Zap } from "lucide-react";
+import { Camera, Shield, Users, Smartphone, Lock, Zap, BrushCleaning, Bike, DoorClosed, Cctv } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link'; // Importe o componente Link do Next.js
 
@@ -8,10 +8,10 @@ const Services = () => {
 
   const services = [
     {
-      icon: Camera,
+      icon: Cctv,
       title: "CFTV e Monitoramento",
-      description: "Sistema completo de circuito fechado de TV com monitoramento 24h e gravação em alta definição.",
-      features: ["Câmeras 4K", "Visão noturna", "Acesso remoto", "Gravação em nuvem"]
+      description: "Sistema completo de circuito fechado de TV com monitoramento 24h e gravação.",
+      features: ["Câmeras", "Visão noturna", "Acesso remoto", "Gravação em nuvem"]
     },
     {
       icon: Shield,
@@ -20,10 +20,10 @@ const Services = () => {
       features: ["Sensores infravermelhos", "Alarme silencioso", "Notificação mobile", "Backup de energia"]
     },
     {
-      icon: Users,
-      title: "Segurança Patrimonial",
-      description: "Equipe especializada de vigilantes para proteção patrimonial e controle de acesso.",
-      features: ["Vigilantes treinados", "Controle de acesso", "Rondas programadas", "Relatórios detalhados"]
+      icon: DoorClosed,
+      title: "Portaria e Controladores de Acesso",
+      description: "Equipe qualificada para portaria, zeladoria e controle de acesso.",
+      features: ["Agentes treinados", "Controle de acesso", "Rondas programadas", "Relatórios detalhados"]
     },
     {
       icon: Smartphone,
@@ -39,16 +39,34 @@ const Services = () => {
     },
     {
       icon: Zap,
-      title: "Automação e Integração",
-      description: "Integração completa com sistemas de automação e IoT para máxima eficiência.",
-      features: ["IoT integrado", "Automação predial", "Controle inteligente", "Economia de energia"]
+      title: "Cercas Elétricas",
+      description: "Instalação e manutenção de sistemas de cerca elétrica para proteção perimetral de seu patrimônio.",
+      features: ["Proteção perimetral", "Alarme sonoro integrado", "Energizador de choque", "Manutenção preventiva"]
+    },
+    {
+      icon: BrushCleaning,
+      title: "Limpeza e Higienização",
+      description: "Serviços profissionais de limpeza e higienização para ambientes comerciais e residenciais.",
+      features: ["Limpeza profissional", "Limpeza de vidros", "Sanitização de ambientes", "Equipamentos de ponta"]
+    },
+    {
+      icon: Bike,
+      title: "Rondas Motorizadas",
+      description: "Rondas motorizadas em veículos de segurança para inibir ações criminosas e reforçar a proteção de seu patrimônio.",
+      features: ["Veículos de segurança", "Cobertura de área estendida", "Rondas programadas e aleatórias", "Resposta rápida"]
+    },
+    {
+      icon: Users,
+      title: "Segurança para Eventos",
+      description: "Profissionais de segurança treinados para controle de acesso, proteção de público e vigilância de eventos.",
+      features: ["Controle de acesso", "Planejamento de segurança", "Equipe treinada", "Monitoramento de público"]
     }
   ];
 
   return (
     <section id="servicos" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent mb-6">
             Nossos Serviços
           </h2>
@@ -107,7 +125,7 @@ const Services = () => {
           <Button asChild variant="default" size="lg" className="text-lg px-8 py-6">
             {/* Você pode definir um link específico para este botão também, se quiser */}
             <Link 
-              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, gostaria de solicitar um orçamento personalizado para sua empresa.")}`} 
+              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, gostaria de solicitar um orçamento personalizado para minha empresa.")}`} 
               target="_blank" 
               rel="noopener noreferrer"
             >

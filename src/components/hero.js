@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
-  const whatsappNumber = "5555984144818"; 
-  const whatsappMessage = encodeURIComponent("Ola, gostaria de solicitar um orçamento para a minha empresa."); 
+  const whatsappNumber = "5555984144818";
+  const whatsappMessage = encodeURIComponent("Ola, gostaria de solicitar um orçamento para a minha empresa.");
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -22,30 +22,30 @@ export function Hero() {
           className="w-full h-full object-cover opacity-20"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gray-950 opacity-60"></div> 
+        <div className="absolute inset-0 bg-gray-950 opacity-60"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Proteção Total para
-            <span className="bg-gradient-to-r from-sky-200 to-blue-900 bg-clip-text text-transparent text-shadow-glow"> Sua Empresa</span> 
-          </h1>
+              Proteção Total para
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent"> Sua Empresa</span>
+            </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Soluções completas em segurança com tecnologia de ponta,
               monitoramento 24h e equipe especializada para proteger
               o que mais importa para você.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 w-68 text-white border-white hover:bg-white hover:text-blue-600">
+            <div className="flex flex-col sm:flex-row gap-6 mb-12">
+              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 flex-1">
                 <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   Solicitar Orçamento Gratuito
                 </Link>
               </Button>
-              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 w-68 text-white border-white hover:bg-white hover:text-blue-600">
-                <Link href="#servicos"> 
+              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 flex-1">
+                <Link href="#servicos">
                   Nossos Serviços
                 </Link>
               </Button>
@@ -87,21 +87,21 @@ export function Hero() {
           <div className="hidden lg:block animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
               {/* bg-gradient-primary -> bg-blue-500 com opacidade ajustada */}
-              <div className="absolute inset-0 bg-blue-500 rounded-3xl opacity-20 blur-3xl"></div> 
+              <div className="absolute inset-0 bg-blue-500 rounded-3xl opacity-20 blur-3xl"></div>
               <div className="relative bg-gray-900/40 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-xl"> {/* bg-card/10 -> bg-gray-900/40, shadow-glow -> shadow-xl */}
                 <h3 className="text-2xl font-semibold text-white mb-6">Por que nos escolher?</h3>
                 <ul className="space-y-4 text-white/90">
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
-                    <span>Tecnologia de segurança mais avançada do mercado</span>
+                    <span>Monitoramento de segurança com tecnologia avançada</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
-                    <span>Equipe treinada e certificada internacionalmente</span>
+                    <span>Equipe treinada e qualificada.</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
-                    <span>Suporte técnico 24 horas por dia, 7 dias por semana</span>
+                    <span>Suporte com cliente 24 horas por dia, 7 dias por semana</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
