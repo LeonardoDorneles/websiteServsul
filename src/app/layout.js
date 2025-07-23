@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        {children}
         <Header />
         <Hero />
         <Services />
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
         <Contacts />
 
 
-        {children}
+        
       </body>
     </html>
   );

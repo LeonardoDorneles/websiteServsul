@@ -5,7 +5,7 @@ const Contacts = () => {
     <section id="contato" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent mb-6">
             Entre em Contato
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -22,9 +22,9 @@ const Contacts = () => {
                 Informações de Contato
               </h3>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-72 gap-y-6"> {/* md:grid-cols-2 para duas colunas em telas médias+ */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-60 gap-y-6"> {/* md:grid-cols-2 para duas colunas em telas médias+ */}
                 <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-xl">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-900 text-white  rounded-xl">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -36,7 +36,7 @@ const Contacts = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-xl">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-900 text-white  rounded-xl">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -46,21 +46,21 @@ const Contacts = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-xl">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-900 text-white  rounded-xl">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Endereço</h4>
                     <p className="text-gray-600">
-                      Rua da Segurança, 123<br />
-                      Centro - São Paulo, SP<br />
-                      CEP: 01000-000
+                      Rua Benjamin Constant, 1177<br />
+                      Santo Antônio - Uruguaiana, RS<br />
+                      CEP: 97502-126
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-xl">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-900 text-white  rounded-xl">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <div>

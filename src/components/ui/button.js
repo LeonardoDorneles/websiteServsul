@@ -9,9 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        // Variantes e cores
-        default: "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg hover:scale-105", // Exemplo: Azul vibrante
-        
+        default: "bg-gradient-to-r from-blue-700 to-blue-900 text-white hover:bg-blue-800 hover:shadow-lg hover:scale-105 focus-visible:ring-blue-500",
       },
       size: {
         default: "h-10 px-4 py-2",

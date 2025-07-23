@@ -49,7 +49,7 @@ const Services = () => {
     <section id="servicos" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent mb-6">
             Nossos Serviços
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -70,7 +70,7 @@ const Services = () => {
                 className="group flex flex-col bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 animate-fade-in border border-gray-200"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl mb-6 group-hover:shadow-xl transition-all duration-300">
+                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r from-blue-700 to-blue-900 text-white focus-visible:ring-blue-500 transition-all duration-300 mb-6">
                   <service.icon className="h-8 w-8 text-white" />
                 </div>
 

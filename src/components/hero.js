@@ -11,7 +11,7 @@ export function Hero() {
 
 
   return (
-    <section id="sobrenos" className="relative min-h-screen flex items-center bg-indigo-700 overflow-hidden">
+    <section id="sobrenos" className="relative min-h-screen flex items-center bg-gray-950 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -22,16 +22,16 @@ export function Hero() {
           className="w-full h-full object-cover opacity-20"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gray-950 opacity-80"></div> 
+        <div className="absolute inset-0 bg-gray-950 opacity-60"></div> 
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Proteção Total para
-              <span className="text-yellow-300"> Sua Empresa</span> 
-            </h1>
+            Proteção Total para
+            <span className="bg-gradient-to-r from-sky-200 to-blue-900 bg-clip-text text-transparent text-shadow-glow"> Sua Empresa</span> 
+          </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Soluções completas em segurança com tecnologia de ponta,
               monitoramento 24h e equipe especializada para proteger
