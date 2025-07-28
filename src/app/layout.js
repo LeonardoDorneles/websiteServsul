@@ -12,9 +12,9 @@ export const metadata = {
   authors: [{ name: 'Leonardo Dorneles' }], 
   creator: 'Leonardo Dorneles',
   publisher: 'Leonardo Dorneles',
-  metadataBase: new URL('https://seusite.com.br'), // Substitua pelo URL real do seu site
+  metadataBase: new URL('https://servsulservicos.com.br'), // Substitua pelo URL real do seu site
   alternates: {
-    canonical: 'https://seusite.com.br',
+    canonical: 'https://www.servsulservicos.com.br',
   },
   openGraph: {
     title: 'Servsul Serviços: Proteção Total para Sua Empresa',
