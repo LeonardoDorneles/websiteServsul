@@ -9,9 +9,9 @@ export function Hero() {
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
-
   return (
-    <section id="sobrenos" className="relative min-h-screen flex items-center bg-gray-950 overflow-hidden">
+    // AJUSTE 1: Espaçamento vertical responsivo
+    <section id="sobrenos" className="relative flex items-center bg-gray-950 overflow-hidden lg:min-h-screen py-24 lg:py-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -21,6 +21,7 @@ export function Hero() {
           height={1080}
           className="w-full h-full object-cover opacity-20"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority // Adicionado para carregamento otimizado (LCP)
         />
         <div className="absolute inset-0 bg-gray-950 opacity-60"></div>
       </div>
@@ -28,55 +29,57 @@ export function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white animate-fade-in">
+            {/* AJUSTE 2: Tipografia mais adaptável */}
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Proteção total para
               <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent"> sua empresa</span>
             </h1>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-md sm:text-xl text-white/90 mb-8 leading-relaxed">
               Soluções completas em segurança com tecnologia de ponta,
               monitoramento 24h e equipe especializada para proteger
               o que mais importa para você.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 mb-12">
-              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 flex-1">
+            {/* AJUSTE 3: Botões mais flexíveis */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Button asChild variant="default" size="lg" className="w-full text-lg px-4 py-6">
                 <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   Solicitar orçamento gratuito
                 </Link>
               </Button>
-              <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 flex-1">
+              <Button asChild variant="default" size="lg" className="w-full text-lg px-4 py-6">
                 <Link href="#servicos">
                   Nossos serviços
                 </Link>
               </Button>
             </div>
 
-            {/* Stats */}
+            {/* Stats - Já está responsivo */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center animate-slide-in-right" style={{ animationDelay: '0.2s' }}>
                 <div className="flex items-center justify-center mb-2">
-                  <Shield className="h-8 w-8 text-yellow-300" /> {/* text-primary-glow -> text-yellow-300 */}
+                  <Shield className="h-8 w-8 text-yellow-300" />
                 </div>
                 <div className="text-2xl font-bold">20+</div>
                 <div className="text-sm text-white/80">Anos de Experiência</div>
               </div>
               <div className="text-center animate-slide-in-right" style={{ animationDelay: '0.4s' }}>
                 <div className="flex items-center justify-center mb-2">
-                  <Users className="h-8 w-8 text-yellow-300" /> {/* text-primary-glow -> text-yellow-300 */}
+                  <Users className="h-8 w-8 text-yellow-300" />
                 </div>
                 <div className="text-2xl font-bold">500+</div>
                 <div className="text-sm text-white/80">Clientes Atendidos</div>
               </div>
               <div className="text-center animate-slide-in-right" style={{ animationDelay: '0.6s' }}>
                 <div className="flex items-center justify-center mb-2">
-                  <Clock className="h-8 w-8 text-yellow-300" /> {/* text-primary-glow -> text-yellow-300 */}
+                  <Clock className="h-8 w-8 text-yellow-300" />
                 </div>
                 <div className="text-2xl font-bold">24/7</div>
                 <div className="text-sm text-white/80">Monitoramento</div>
               </div>
               <div className="text-center animate-slide-in-right" style={{ animationDelay: '0.8s' }}>
                 <div className="flex items-center justify-center mb-2">
-                  <Award className="h-8 w-8 text-yellow-300" /> {/* text-primary-glow -> text-yellow-300 */}
+                  <Award className="h-8 w-8 text-yellow-300" />
                 </div>
                 <div className="text-2xl font-bold">ISO</div>
                 <div className="text-sm text-white/80">Certificados</div>
@@ -84,27 +87,27 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="hidden lg:block animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          {/* AJUSTE 4: Tornar a seção "Por que nos escolher?" visível em mobile */}
+          <div className="animate-fade-in lg:mt-0" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              {/* bg-gradient-primary -> bg-blue-500 com opacidade ajustada */}
               <div className="absolute inset-0 bg-blue-500 rounded-3xl opacity-20 blur-3xl"></div>
-              <div className="relative bg-gray-900/40 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-xl"> {/* bg-card/10 -> bg-gray-900/40, shadow-glow -> shadow-xl */}
+              <div className="relative bg-gray-900/40 backdrop-blur-sm border border-white/20 rounded-3xl p-8 shadow-xl">
                 <h3 className="text-2xl font-semibold text-white mb-6">Por que nos escolher?</h3>
                 <ul className="space-y-4 text-white/90">
                   <li className="flex items-start space-x-3">
-                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
+                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" />
                     <span>Monitoramento de segurança com tecnologia avançada.</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
+                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" />
                     <span>Equipe treinada e qualificada.</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
+                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" />
                     <span>Suporte com cliente 24 horas por dia, 7 dias por semana.</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
+                    <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" />
                     <span>Garantia total em todos os nossos serviços.</span>
                   </li>
                 </ul>
