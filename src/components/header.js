@@ -60,7 +60,7 @@ export function Header() {
 
           <Button asChild variant="default" size="lg">
             <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              Solicitar Orçamento
+              Solicitar orçamento
             </Link>
           </Button>
         </nav>

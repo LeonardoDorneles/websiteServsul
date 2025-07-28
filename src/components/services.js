@@ -9,55 +9,55 @@ const Services = () => {
   const services = [
     {
       icon: Cctv,
-      title: "CFTV e Monitoramento",
+      title: "CFTV e monitoramento",
       description: "Sistema completo de circuito fechado de TV com monitoramento 24h e gravação.",
       features: ["Câmeras", "Visão noturna", "Acesso remoto", "Gravação em nuvem"]
     },
     {
       icon: Shield,
-      title: "Alarmes e Sensores",
+      title: "Alarmes e sensores",
       description: "Sistemas de alarme inteligentes com sensores de movimento, abertura e quebra de vidro.",
       features: ["Sensores infravermelhos", "Alarme silencioso", "Notificação mobile", "Backup de energia"]
     },
     {
       icon: DoorClosed,
-      title: "Portaria e Controladores de Acesso",
+      title: "Portaria e controladores de acesso",
       description: "Equipe qualificada para portaria, zeladoria e controle de acesso.",
       features: ["Agentes treinados", "Controle de acesso", "Rondas programadas", "Relatórios detalhados"]
     },
     {
       icon: Smartphone,
-      title: "Monitoramento Remoto",
+      title: "Monitoramento remoto",
       description: "Acompanhe sua empresa em tempo real através do nosso app exclusivo.",
       features: ["App mobile", "Notificações push", "Histórico completo", "Múltiplos usuários"]
     },
     {
       icon: Lock,
-      title: "Controle de Acesso",
+      title: "Controle de acesso",
       description: "Sistemas biométricos e por cartão para controle total de entrada e saída.",
       features: ["Biometria digital", "Cartões RFID", "Reconhecimento facial", "Logs de acesso"]
     },
     {
       icon: Zap,
-      title: "Cercas Elétricas",
+      title: "Cercas elétricas",
       description: "Instalação e manutenção de sistemas de cerca elétrica para proteção perimetral de seu patrimônio.",
       features: ["Proteção perimetral", "Alarme sonoro integrado", "Energizador de choque", "Manutenção preventiva"]
     },
     {
       icon: BrushCleaning,
-      title: "Limpeza e Higienização",
+      title: "Limpeza e higienização",
       description: "Serviços profissionais de limpeza e higienização para ambientes comerciais e residenciais.",
       features: ["Limpeza profissional", "Limpeza de vidros", "Sanitização de ambientes", "Equipamentos de ponta"]
     },
     {
       icon: Bike,
-      title: "Rondas Motorizadas",
+      title: "Rondas motorizadas",
       description: "Rondas motorizadas em veículos de segurança para inibir ações criminosas e reforçar a proteção de seu patrimônio.",
       features: ["Veículos de segurança", "Cobertura de área estendida", "Rondas programadas e aleatórias", "Resposta rápida"]
     },
     {
       icon: Users,
-      title: "Segurança para Eventos",
+      title: "Segurança para eventos",
       description: "Profissionais de segurança treinados para controle de acesso, proteção de público e vigilância de eventos.",
       features: ["Controle de acesso", "Planejamento de segurança", "Equipe treinada", "Monitoramento de público"]
     }
@@ -68,7 +68,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent mb-6">
-            Nossos Serviços
+            Nossos serviços
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Oferecemos soluções completas em segurança com tecnologia de ponta
@@ -112,7 +112,7 @@ const Services = () => {
                 {/* Botão "Saiba Mais" com link para WhatsApp */}
                 <Button asChild variant="default" className="w-full group-hover:bg-blue-700 group-hover:text-white mt-auto">
                   <Link href={serviceWhatsappLink} target="_blank" rel="noopener noreferrer">
-                    Saiba Mais
+                    Saiba mais
                   </Link>
                 </Button>
               </div>
@@ -129,7 +129,7 @@ const Services = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Solicitar Orçamento Personalizado
+              Solicitar orçamento personalizado
             </Link>
           </Button>
         </div>

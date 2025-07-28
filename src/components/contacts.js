@@ -6,7 +6,7 @@ const Contacts = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent mb-6">
-            Entre em Contato
+            Entre em contato
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Nossa equipe está pronta para atendê-lo 24 horas por dia.
@@ -19,7 +19,7 @@ const Contacts = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-200">
               <h3 className="text-2xl font-semibold text-blue-700 mb-6 text-center">
-                Informações de Contato
+                Informações de contato
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-60 gap-y-6"> {/* md:grid-cols-2 para duas colunas em telas médias+ */}
@@ -64,7 +64,7 @@ const Contacts = () => {
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Horário de Atendimento</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">Horário de atendimento</h4>
                     <p className="text-gray-600">
                       Segunda a Sexta: 8h às 18h<br />
                     </p>

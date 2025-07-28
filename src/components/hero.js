@@ -29,8 +29,8 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Proteção Total para
-              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent"> Sua Empresa</span>
+              Proteção total para
+              <span className="bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent"> sua empresa</span>
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Soluções completas em segurança com tecnologia de ponta,
@@ -41,12 +41,12 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-6 mb-12">
               <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 flex-1">
                 <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                  Solicitar Orçamento Gratuito
+                  Solicitar orçamento gratuito
                 </Link>
               </Button>
               <Button asChild variant="default" size="lg" className="text-lg px-8 py-6 flex-1">
                 <Link href="#servicos">
-                  Nossos Serviços
+                  Nossos serviços
                 </Link>
               </Button>
             </div>
@@ -93,7 +93,7 @@ export function Hero() {
                 <ul className="space-y-4 text-white/90">
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
-                    <span>Monitoramento de segurança com tecnologia avançada</span>
+                    <span>Monitoramento de segurança com tecnologia avançada.</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
@@ -101,11 +101,11 @@ export function Hero() {
                   </li>
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
-                    <span>Suporte com cliente 24 horas por dia, 7 dias por semana</span>
+                    <span>Suporte com cliente 24 horas por dia, 7 dias por semana.</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <Shield className="h-5 w-5 text-yellow-300 mt-1 flex-shrink-0" /> {/* text-primary-glow -> text-yellow-300 */}
-                    <span>Garantia total em todos os nossos serviços</span>
+                    <span>Garantia total em todos os nossos serviços.</span>
                   </li>
                 </ul>
               </div>
