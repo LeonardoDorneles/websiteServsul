@@ -26,18 +26,6 @@ const Services = () => {
       features: ["Agentes treinados", "Controle de acesso", "Rondas programadas", "Relatórios detalhados"]
     },
     {
-      icon: Smartphone,
-      title: "Monitoramento remoto",
-      description: "Acompanhe sua empresa em tempo real através do nosso app exclusivo.",
-      features: ["App mobile", "Notificações push", "Histórico completo", "Múltiplos usuários"]
-    },
-    {
-      icon: Lock,
-      title: "Controle de acesso",
-      description: "Sistemas biométricos e por cartão para controle total de entrada e saída.",
-      features: ["Biometria digital", "Cartões RFID", "Reconhecimento facial", "Logs de acesso"]
-    },
-    {
       icon: Zap,
       title: "Cercas elétricas",
       description: "Instalação e manutenção de sistemas de cerca elétrica para proteção perimetral de seu patrimônio.",
