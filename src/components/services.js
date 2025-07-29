@@ -42,12 +42,6 @@ const Services = () => {
       title: "Rondas motorizadas",
       description: "Rondas motorizadas em veículos de segurança para inibir ações criminosas e reforçar a proteção de seu patrimônio.",
       features: ["Veículos de segurança", "Cobertura de área estendida", "Rondas programadas e aleatórias", "Resposta rápida"]
-    },
-    {
-      icon: Users,
-      title: "Segurança para eventos",
-      description: "Profissionais de segurança treinados para controle de acesso, proteção de público e vigilância de eventos.",
-      features: ["Controle de acesso", "Planejamento de segurança", "Equipe treinada", "Monitoramento de público"]
     }
   ];
 

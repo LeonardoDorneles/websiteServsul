@@ -12,14 +12,14 @@ export const metadata = {
   authors: [{ name: 'Leonardo Dorneles' }], 
   creator: 'Leonardo Dorneles',
   publisher: 'Leonardo Dorneles',
-  metadataBase: new URL('https://servsulservicos.com.br'), // Substitua pelo URL real do seu site
+  metadataBase: new URL('https://servsulservicos.com.br'), 
   alternates: {
     canonical: 'https://www.servsulservicos.com.br',
   },
   openGraph: {
     title: 'Servsul Serviços: Proteção Total para Sua Empresa',
     description: 'Soluções completas em segurança e monitoramento 24h em Uruguaiana, RS. Proteção patrimonial, cercas elétricas, alarmes, limpeza e segurança para eventos.',
-    url: 'https://seusite.com.br',
+    url: 'https://servsulservicos.com.br',
     siteName: 'Servsul Serviços',
     images: [
       {
@@ -43,7 +43,7 @@ export const metadata = {
     title: 'Servsul Serviços: Proteção Total para Sua Empresa',
     description: 'Soluções completas em segurança e monitoramento 24h em Uruguaiana, RS. Proteção patrimonial, cercas elétricas, alarmes, limpeza e segurança para eventos.',
     creator: '@ServsulOficial', // Se tiver um Twitter, substitua
-    images: ['https://seusite.com.br/img/logo.png'], // Caminho absoluto para a imagem do Twitter Card
+    images: ['https://servsulservicos.com.br/img/logo.png'], // Caminho absoluto para a imagem do Twitter Card
   },
 };
 
