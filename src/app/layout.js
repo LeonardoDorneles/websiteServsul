@@ -3,7 +3,7 @@ import {Header} from '../components/header'
 import {Hero} from '../components/hero'
 import Services from '../components/services'
 import { Location } from '@/components/location';
-import Contacts from '@/components/contacts'
+import Footer from '@/components/footer'
  
 export const metadata = {
   title: 'Servsul Serviços: Proteção Total para Sua Empresa', 
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         <Hero />
         <Services />
         <Location />
-        <Contacts />
+        <Footer />
         
 
         

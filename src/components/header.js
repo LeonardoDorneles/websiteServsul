@@ -53,7 +53,7 @@ export function Header() {
             <a href="#sobre" className="font-medium">
               Localização
             </a>
-            <a href="#contato" className="font-medium">
+            <a href="#footer" className="font-medium">
               Contato
             </a>
           </div>
